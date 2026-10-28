@@ -1,0 +1,227 @@
+/* ========== COULEURS ET RÉGLAGES DE BASE ========== */
+/* Pour changer l'ambiance du site, modifie simplement ces couleurs. */
+:root {
+  --fond: #f8fafc;
+  --fond-carte: #ffffff;
+  --texte: #1e293b;
+  --texte-doux: #64748b;
+  --accent: #2563eb;
+  --accent-fonce: #1d4ed8;
+  --bordure: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* défilement doux vers les sections */
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--fond);
+  color: var(--texte);
+  line-height: 1.6;
+}
+
+/* ========== BARRE DE NAVIGATION ========== */
+.navbar {
+  position: sticky; /* reste en haut quand on fait défiler */
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--fond-carte);
+  border-bottom: 1px solid var(--bordure);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  color: var(--texte);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: var(--accent);
+}
+
+/* ========== SECTIONS ========== */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+/* ========== ACCUEIL ========== */
+.hero {
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.hero-intro {
+  color: var(--texte-doux);
+  font-size: 1.1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0.3rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-text {
+  max-width: 550px;
+  margin: 1rem auto 2rem;
+  color: var(--texte-doux);
+}
+
+/* ========== BOUTONS ========== */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  margin: 0.3rem;
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--accent-fonce);
+  border-color: var(--accent-fonce);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  color: #fff;
+}
+
+/* ========== CARTES (compétences et projets) ========== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 0.7rem;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li {
+  padding: 0.2rem 0;
+  color: var(--texte-doux);
+}
+
+.project .tags {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ========== PARCOURS (frise) ========== */
+.timeline {
+  list-style: none;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+}
+
+.timeline li {
+  margin-bottom: 1.8rem;
+}
+
+.timeline .date {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.timeline p {
+  color: var(--texte-doux);
+}
+
+/* ========== PIED DE PAGE ========== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--texte-doux);
+  border-top: 1px solid var(--bordure);
+}
+
+/* ========== ADAPTATION AU TÉLÉPHONE ========== */
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .navbar nav a {
+    margin: 0 0.6rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

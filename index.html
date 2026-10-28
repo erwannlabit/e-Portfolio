@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titre affiché dans l'onglet du navigateur : remplace par ton nom -->
+  <title>Prénom Nom | Étudiant ingénieur</title>
+  <meta name="description" content="Portfolio de Prénom Nom, étudiant en école d'ingénieurs.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== BARRE DE NAVIGATION ========== -->
+  <header class="navbar">
+    <a href="#accueil" class="logo">Prénom Nom</a>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== ACCUEIL ========== -->
+    <section id="accueil" class="hero">
+      <p class="hero-intro">Bonjour, je suis</p>
+      <h1>Prénom Nom</h1>
+      <!-- Remplace par ta spécialité : informatique, mécanique, électronique, etc. -->
+      <p class="hero-subtitle">Étudiant en 1ère année à [Nom de ton école d'ingénieurs]</p>
+      <p class="hero-text">
+        Passionné par [ton domaine], je recherche un [stage / alternance] à partir de [mois, année].
+      </p>
+      <div class="hero-buttons">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>
+        Présente-toi en 3 ou 4 phrases : ton parcours, ce qui te motive dans l'ingénierie,
+        ce que tu cherches à apprendre et ce que tu aimes faire en dehors des cours.
+      </p>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Programmation</h3>
+          <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Outils</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Linux</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sciences</h3>
+          <ul>
+            <li>Mathématiques</li>
+            <li>Physique</li>
+            <li>Électronique</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Langues</h3>
+          <ul>
+            <li>Français : langue maternelle</li>
+            <li>Anglais : niveau B2</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Modifie les listes pour mettre tes vraies compétences. Duplique un bloc "card" pour en ajouter. -->
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="cards">
+
+        <!-- Duplique ce bloc pour chaque projet (projet de cours, personnel, associatif...) -->
+        <article class="card project">
+          <h3>Titre du projet 1</h3>
+          <p class="tags">Python · Arduino · Travail en équipe</p>
+          <p>Décris en 2 ou 3 phrases : le but du projet, ton rôle et le résultat obtenu.</p>
+          <a href="https://github.com/ton-pseudo/nom-du-projet" target="_blank" rel="noopener">Voir sur GitHub →</a>
+        </article>
+
+        <article class="card project">
+          <h3>Titre du projet 2</h3>
+          <p class="tags">C · Algorithmique</p>
+          <p>Décris ce que tu as réalisé et ce que tu as appris.</p>
+          <a href="https://github.com/ton-pseudo/nom-du-projet" target="_blank" rel="noopener">Voir sur GitHub →</a>
+        </article>
+
+        <article class="card project">
+          <h3>Titre du projet 3</h3>
+          <p class="tags">Mécanique · CAO</p>
+          <p>Même un petit projet de cours ou de club a sa place ici.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== PARCOURS ========== -->
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <ul class="timeline">
+        <li>
+          <span class="date">2026 – aujourd'hui</span>
+          <strong>[Nom de ton école d'ingénieurs]</strong>
+          <p>Cycle ingénieur, spécialité [à préciser].</p>
+        </li>
+        <li>
+          <span class="date">2024 – 2026</span>
+          <strong>[Classe préparatoire / BUT / Licence]</strong>
+          <p>[Établissement, ville].</p>
+        </li>
+        <li>
+          <span class="date">2024</span>
+          <strong>Baccalauréat [série / spécialités]</strong>
+          <p>[Lycée, mention éventuelle].</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Une question, une opportunité de stage ? N'hésite pas à m'écrire.</p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:ton.email@exemple.fr">ton.email@exemple.fr</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/ton-pseudo" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Prénom Nom</p>
+  </footer>
+
+</body>
+</html>
