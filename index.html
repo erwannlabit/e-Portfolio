@@ -182,18 +182,11 @@
   const bouton = document.getElementById("theme-toggle");
   const racine = document.documentElement;
 
-  function majIcone() {
-    bouton.textContent = racine.getAttribute("data-theme") === "dark" ? "☀️" : "🌙";
-  }
-
   bouton.addEventListener("click", () => {
     const nouveau = racine.getAttribute("data-theme") === "dark" ? "light" : "dark";
     racine.setAttribute("data-theme", nouveau);
     localStorage.setItem("theme", nouveau);
-    majIcone();
   });
-
-  majIcone();
 </script>
 </body>
 </html>
