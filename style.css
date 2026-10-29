@@ -109,6 +109,11 @@ body {
 #theme-toggle:hover {
   border-color: var(--accent);
 }
+
+#cv {
+  text-align: center;
+}
+
 /* ========== SECTIONS ========== */
 section {
   max-width: 900px;
@@ -118,10 +123,10 @@ section {
 
 h2 {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;       /* était : margin-bottom: 1.5rem; */
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--accent);
-  display: inline-block;
+  display: table;              /* était : inline-block */
 }
 
 /* ========== ACCUEIL ========== */
@@ -212,6 +217,50 @@ h2 {
 }
 
 /* ========== CARTES (compétences et projets) ========== */
+.competences {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.groupe {
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.groupe h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.8rem;
+  background: var(--fond);
+  border: 1px solid var(--bordure);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.chips i {
+  font-size: 1.15rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -242,6 +291,7 @@ h2 {
 }
 
 .sous-section > h3 {
+  text-align: center;
   font-size: 1.3rem;
   margin-bottom: 1rem;
   color: var(--accent);
