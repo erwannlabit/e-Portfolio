@@ -89,7 +89,25 @@ body {
   cursor: pointer;
   color: var(--texte);
   transition: border-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;   /* l'icône reprend la couleur du texte */
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Une seule icône visible à la fois */
+.icone-soleil { display: none; }
+[data-theme="dark"] .icone-soleil { display: block; }
+[data-theme="dark"] .icone-lune { display: none; }
 
 #theme-toggle:hover {
   border-color: var(--accent);
