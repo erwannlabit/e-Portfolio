@@ -7,6 +7,12 @@
   <title>Erwann Labit | Étudiant ingénieur</title>
   <meta name="description" content="Portfolio de Erwann Labit, étudiant en 1ère année d'cole d'ingénieur.">
   <link rel="stylesheet" href="style.css">
+  <script>
+  // Applique le thème enregistré, ou celui de l'ordinateur au premier passage
+  const saved = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+</script>
 </head>
 <body>
 
@@ -20,6 +26,7 @@
       <a href="#parcours">Parcours</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button id="theme-toggle" type="button" aria-label="Changer de thème">🌙</button>
   </header>
 
   <main>
@@ -154,6 +161,22 @@
   <footer>
     <p>© 2026 Prénom Nom</p>
   </footer>
+<script>
+  const bouton = document.getElementById("theme-toggle");
+  const racine = document.documentElement;
 
+  function majIcone() {
+    bouton.textContent = racine.getAttribute("data-theme") === "dark" ? "☀️" : "🌙";
+  }
+
+  bouton.addEventListener("click", () => {
+    const nouveau = racine.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    racine.setAttribute("data-theme", nouveau);
+    localStorage.setItem("theme", nouveau);
+    majIcone();
+  });
+
+  majIcone();
+</script>
 </body>
 </html>
