@@ -1,13 +1,33 @@
 /* ========== COULEURS ET RÉGLAGES DE BASE ========== */
-/* Pour changer l'ambiance du site, modifie simplement ces couleurs. */
+/* Thème clair (par défaut) */
 :root {
   --fond: #f8fafc;
   --fond-carte: #ffffff;
   --texte: #1e293b;
   --texte-doux: #64748b;
-  --accent: #2563eb;
-  --accent-fonce: #1d4ed8;
   --bordure: #e2e8f0;
+
+  --accent: #1d4ed8;        /* bleu : titres, boutons, liens */
+  --accent-fonce: #1e40af;  /* bleu foncé : survol */
+  --accent-2: #0f766e;      /* turquoise : tags, dates */
+  --accent-3: #b45309;      /* ambre : détails (frise, bordure des cartes) */
+  --sur-accent: #ffffff;    /* couleur du texte posé sur un bouton bleu */
+}
+
+/* Thème sombre */
+[data-theme="dark"] {
+  --fond: #0f172a;
+  --fond-carte: #1e293b;
+  --texte: #e2e8f0;
+  --texte-doux: #94a3b8;
+  --bordure: #334155;
+
+  --accent: #60a5fa;
+  --accent-fonce: #93c5fd;
+  --accent-2: #2dd4bf;
+  --accent-3: #fbbf24;
+  --sur-accent: #0f172a;
+  color-scheme: dark;
 }
 
 * {
