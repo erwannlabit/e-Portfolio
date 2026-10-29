@@ -19,11 +19,15 @@
   <!-- ========== BARRE DE NAVIGATION ========== -->
   <header class="navbar">
     <a href="#accueil" class="logo">Erwann Labit</a>
+
     <nav>
       <a href="#accueil">Accueil</a>
-      <a href="#competences">Compétences</a>
-      <a href="#projets">Projets</a>
-      <a href="#parcours">Parcours</a>
+      <a href="#ingenieur">Ingénieur</a>
+      <a href="#carriere">Carrière</a>
+      <a href="#international">International</a>
+      <a href="#engagement">Engagement</a>
+      <a href="#loisirs">Loisirs</a>
+      <a href="#developpement-pro">Stages &amp; CV</a>
       <a href="#contact">Contact</a>
     </nav>
     <button id="theme-toggle" type="button" aria-label="Changer de thème" title="Changer de thème">
@@ -70,79 +74,37 @@
 
 </section>
 
-    <!-- ========== COMPÉTENCES ========== -->
-    <section id="competences">
-      <h2>Compétences</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Programmation</h3>
-          <ul>
-            <li>Python</li>
-            <li>C</li>
-            <li>HTML / CSS</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Outils</h3>
-          <ul>
-            <li>Git / GitHub</li>
-            <li>Linux</li>
-            <li>VS Code</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Sciences</h3>
-          <ul>
-            <li>Mathématiques</li>
-            <li>Physique</li>
-            <li>Électronique</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Langues</h3>
-          <ul>
-            <li>Français : langue maternelle</li>
-            <li>Anglais : niveau B2</li>
-            <li>Espagnol : niveau B1</li>
-            <li>Japonais : niveau A1 débutant</li>
-          </ul>
-        </div>
+    <!-- ========== INGÉNIEUR ========== -->
+<section id="ingenieur">
+  <h2>Ingénieur</h2>
+
+  <div class="sous-section" id="competences">
+    <h3>Compétences</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Programmation</h4>
+        <ul><li>Python</li><li>C</li></ul>
       </div>
-      <!-- Modifie les listes pour mettre tes vraies compétences. Duplique un bloc "card" pour en ajouter. -->
-    </section>
+      <!-- duplique un bloc "card" par catégorie -->
+    </div>
+  </div>
 
-    <!-- ========== PROJETS ========== -->
-    <section id="projets">
-      <h2>Projets</h2>
-      <div class="cards">
-
-        <!-- Duplique ce bloc pour chaque projet (projet de cours, personnel, associatif...) -->
-        <article class="card project">
-          <h3>Titre du projet 1</h3>
-          <p class="tags">Python · Arduino · Travail en équipe</p>
-          <p>Décris en 2 ou 3 phrases : le but du projet, ton rôle et le résultat obtenu.</p>
-          <a href="https://github.com/ton-pseudo/nom-du-projet" target="_blank" rel="noopener">Voir sur GitHub →</a>
-        </article>
-
-        <article class="card project">
-          <h3>Titre du projet 2</h3>
-          <p class="tags">C · Algorithmique</p>
-          <p>Décris ce que tu as réalisé et ce que tu as appris.</p>
-          <a href="https://github.com/ton-pseudo/nom-du-projet" target="_blank" rel="noopener">Voir sur GitHub →</a>
-        </article>
-
-        <article class="card project">
-          <h3>Titre du projet 3</h3>
-          <p class="tags">Mécanique · CAO</p>
-          <p>Même un petit projet de cours ou de club a sa place ici.</p>
-        </article>
-
-      </div>
-    </section>
+  <div class="sous-section" id="projets">
+    <h3>Projets</h3>
+    <div class="cards">
+      <article class="card project">
+        <h4>Titre du projet</h4>
+        <p class="tags">Python · Arduino</p>
+        <p>Description…</p>
+        <a href="https://github.com/ton-pseudo/nom-du-projet" target="_blank" rel="noopener">Voir sur GitHub →</a>
+      </article>
+    </div>
+  </div>
+</section>
 
     <!-- ========== PARCOURS ========== -->
-    <section id="parcours">
-      <h2>Parcours</h2>
+    <section id="Carrière">
+      <h2>Carrière</h2>
       <ul class="timeline">
         <li>
           <span class="date">Sept 2026 – aujourd'hui</span>
@@ -162,6 +124,97 @@
       </ul>
     </section>
 
+<section id="international">
+  <h2>Mobilité internationale</h2>
+
+  <div class="sous-section" id="langues">
+    <h3>Langues</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Français</h4>
+        <p>Langue maternelle</p>
+      </div>
+      <div class="card">
+        <h4>Anglais</h4>
+        <p>Niveau B2</p>
+      </div>
+      <!-- une carte par langue -->
+    </div>
+  </div>
+
+  <div class="sous-section" id="mobilites">
+    <h3>Projets de mobilité</h3>
+    <div class="cards">
+      <article class="card">
+        <h4>Mobilité 1 : pays, ville</h4>
+        <p class="tags">Dates · type (échange, stage…)</p>
+        <p>Description…</p>
+      </article>
+      <!-- duplique pour la mobilité 2 et la mobilité 3 -->
+    </div>
+  </div>
+</section>
+
+<!-- ========== DÉVELOPPEMENT DURABLE ET ENGAGEMENT CITOYEN ========== -->
+<section id="engagement">
+  <h2>Développement durable et engagement citoyen</h2>
+  <div class="cards">
+    <article class="card">
+      <h4>Nom de l'activité ou de l'association</h4>
+      <p class="tags">Rôle · période</p>
+      <p>Description…</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========== SPORT ET LOISIRS ========== -->
+<section id="loisirs">
+  <h2>Sport et loisirs</h2>
+
+  <div class="sous-section" id="sport">
+    <h3>Sport</h3>
+    <div class="cards">
+      <article class="card">
+        <h4>Nom du sport</h4>
+        <p>Description…</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="sous-section" id="hobbies">
+    <h3>Activités et hobbies</h3>
+    <div class="cards">
+      <article class="card">
+        <h4>Nom de l'activité</h4>
+        <p>Description…</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DÉVELOPPEMENT PROFESSIONNEL ========== -->
+<section id="developpement-pro">
+  <h2>Développement professionnel</h2>
+
+  <div class="sous-section" id="stages">
+    <h3>Stages</h3>
+    <div class="cards">
+      <article class="card">
+        <h4>Entreprise, lieu</h4>
+        <p class="tags">Poste · dates</p>
+        <p>Missions et résultats…</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="sous-section" id="cv">
+    <h3>Mes CV</h3>
+    <a class="btn" href="cv-fr.pdf" download>CV en français</a>
+    <a class="btn btn-outline" href="cv-en.pdf" download>CV in English</a>
+    <a class="btn btn-outline" href="cv-es.pdf" download>CV en español</a>
+  </div>
+</section>
+    
     <!-- ========== CONTACT ========== -->
     <section id="contact">
       <h2>Contact</h2>
