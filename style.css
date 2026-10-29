@@ -1,32 +1,29 @@
 /* ========== COULEURS ET RÉGLAGES DE BASE ========== */
 /* Thème clair (par défaut) */
+/* Thème clair */
 :root {
-  --fond: #f8fafc;
-  --fond-carte: #ffffff;
-  --texte: #1e293b;
-  --texte-doux: #64748b;
-  --bordure: #e2e8f0;
+  --fond: #F8FAFC;
+  --fond-carte: #FFFFFF;
+  --texte: #1E293B;
+  --texte-doux: #64748B;
+  --bordure: #E2E8F0;
 
-  --accent: #1d4ed8;        /* bleu : titres, boutons, liens */
-  --accent-fonce: #1e40af;  /* bleu foncé : survol */
-  --accent-2: #0f766e;      /* turquoise : tags, dates */
-  --accent-3: #b45309;      /* ambre : détails (frise, bordure des cartes) */
-  --sur-accent: #ffffff;    /* couleur du texte posé sur un bouton bleu */
+  --accent: #2563EB;
+  --accent-fonce: #1D4ED8;
+  --sur-accent: #FFFFFF;
 }
 
 /* Thème sombre */
 [data-theme="dark"] {
-  --fond: #0f172a;
-  --fond-carte: #1e293b;
-  --texte: #e2e8f0;
-  --texte-doux: #94a3b8;
+  --fond: #0F172A;
+  --fond-carte: #1E293B;
+  --texte: #E2E8F0;
+  --texte-doux: #94A3B8;
   --bordure: #334155;
 
-  --accent: #60a5fa;
-  --accent-fonce: #93c5fd;
-  --accent-2: #2dd4bf;
-  --accent-3: #fbbf24;
-  --sur-accent: #0f172a;
+  --accent: #38BDF8;
+  --accent-fonce: #7DD3FC;
+  --sur-accent: #0F172A;
   color-scheme: dark;
 }
 
@@ -197,7 +194,6 @@ h2 {
   border-radius: 12px;
   padding: 1.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
-  border-top: 3px solid var(--accent-3);
 }
 
 .card:hover {
@@ -220,7 +216,7 @@ h2 {
 
 .project .tags {
   font-size: 0.85rem;
-  color: var(--accent-2);
+  color: var(--accent);
   font-weight: 600;
   margin-bottom: 0.7rem;
 }
@@ -240,7 +236,7 @@ h2 {
 /* ========== PARCOURS (frise) ========== */
 .timeline {
   list-style: none;
-  border-left: 3px solid var(--accent-3);
+  border-left: 3px solid var(--accent);
   padding-left: 1.5rem;
 }
 
@@ -251,7 +247,7 @@ h2 {
 .timeline .date {
   display: block;
   font-size: 0.9rem;
-  color: var(--accent-2);
+  color: var(--accent);
   font-weight: 600;
 }
 
