@@ -469,6 +469,53 @@ section,
   margin-top: 1rem;
 }
 
+/* ========== LANGUES ========== */
+.langues-carte {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure);
+  border-radius: 12px;
+}
+
+.langues-liste {
+  list-style: none;
+}
+
+.langues-liste li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.9rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--bordure);
+}
+
+.langues-liste li:last-child {
+  border-bottom: none;
+}
+
+.langues-liste strong {
+  min-width: 100px;      /* aligne les pastilles de niveau */
+}
+
+.niveau {
+  padding: 0.15rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--fond);
+  border: 1px solid var(--bordure);
+  border-radius: 999px;
+}
+
+.precision {
+  flex: 1 1 200px;       /* passe à la ligne si le texte est long */
+  font-size: 0.9rem;
+  color: var(--texte-doux);
+}
+
 /* ========== PIED DE PAGE ========== */
 footer {
   text-align: center;
