@@ -516,6 +516,35 @@ section,
   color: var(--texte-doux);
 }
 
+/* ========== MOBILITÉS ========== */
+.mobilites {
+  max-width: 800px;          /* évite des lignes trop longues à lire sur grand écran */
+  margin: 0 auto;
+}
+
+/* Un trait fin entre deux mobilités (supprime ce bloc si tu n'en veux pas) */
+.mobilite + .mobilite {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bordure);
+}
+
+.mobilite h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.mobilite-infos {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-2, var(--accent));   /* orange si défini, sinon bleu */
+}
+
+.mobilite p + p {
+  margin-top: 0.8rem;        /* espace entre deux paragraphes */
+}
+
 /* ========== PIED DE PAGE ========== */
 footer {
   text-align: center;
