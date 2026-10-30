@@ -131,11 +131,13 @@ h2 {
 
 /* ========== ACCUEIL ========== */
 .hero {
-  display: flex;            /* photo à gauche, texte à droite */
+  display: flex;
   align-items: center;
   gap: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  min-height: calc(100vh - 73px);    /* hauteur de l'écran moins la barre de navigation */
+  min-height: calc(100dvh - 73px);   /* même chose, plus précis sur téléphone */
 }
 
 .hero-photo {
@@ -388,6 +390,7 @@ footer {
   flex-direction: column;   /* la photo passe au-dessus du texte */
   text-align: center;
   gap: 1.5rem;
+  justify-content: center;   /* centre verticalement quand la photo est au-dessus du texte */
 }
 
 .hero-photo img,
