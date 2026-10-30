@@ -7,7 +7,8 @@
   --texte: #1E293B;
   --texte-doux: #64748B;
   --bordure: #E2E8F0;
-
+  --accent-2: #C2410C;       /* orange foncé : lisible sur fond clair */
+  --sur-accent-2: #FFFFFF;
   --accent: #2563EB;
   --accent-fonce: #1D4ED8;
   --sur-accent: #FFFFFF;
@@ -20,7 +21,8 @@
   --texte: #E2E8F0;
   --texte-doux: #94A3B8;
   --bordure: #334155;
-
+  --accent-2: #FB923C;       /* orange plus clair : lisible sur fond sombre */
+  --sur-accent-2: #0F172A;
   --accent: #38BDF8;
   --accent-fonce: #7DD3FC;
   --sur-accent: #0F172A;
@@ -70,10 +72,13 @@ body {
   color: var(--texte);
   text-decoration: none;
   font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2rem;
 }
 
 .navbar nav a:hover {
   color: var(--accent);
+  border-bottom-color: var(--accent-2);
 }
 
 #theme-toggle {
@@ -263,6 +268,10 @@ h2 {
   font-size: 1.15rem;
 }
 
+.chips li:hover {
+  border-color: var(--accent-2);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -280,6 +289,7 @@ h2 {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-2);
 }
 
 .card h4 {
@@ -327,7 +337,7 @@ section,
 
 .project .tags {
   font-size: 0.85rem;
-  color: var(--accent);
+  color: var(--accent-2);
   font-weight: 600;
   margin-bottom: 0.7rem;
 }
@@ -358,7 +368,7 @@ section,
 .timeline .date {
   display: block;
   font-size: 0.9rem;
-  color: var(--accent);
+  color: var(--accent-2);
   font-weight: 600;
 }
 
