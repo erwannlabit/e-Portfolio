@@ -516,6 +516,11 @@ section,
   color: var(--texte-doux);
 }
 
+.niveau--objectif {
+  color: var(--texte-doux);
+  border-style: dashed;     /* bordure en pointillés : "pas encore acquis" */
+}
+
 /* ========== MOBILITÉS ========== */
 .mobilites {
   max-width: 800px;          /* évite des lignes trop longues à lire sur grand écran */
