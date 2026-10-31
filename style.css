@@ -373,6 +373,27 @@ section,
   color: var(--accent);
 }
 
+/* Les trois listes côte à côte (s'empilent si la place manque) */
+.projet-colonnes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0 2rem;
+}
+
+/* Pastilles de technologies en bas, séparées par un trait */
+.project .chips {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bordure);
+}
+
+/* Une carte de projet par ligne */
+#projets .cards {
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .project .tags {
   font-size: 0.85rem;
   color: var(--accent);
