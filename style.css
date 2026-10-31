@@ -1,13 +1,12 @@
 /* ========== COULEURS ET RÉGLAGES DE BASE ========== */
 /* Thème clair (par défaut) */
-/* Thème clair */
 :root {
   --fond: #F8FAFC;
   --fond-carte: #FFFFFF;
   --texte: #1E293B;
   --texte-doux: #64748B;
   --bordure: #E2E8F0;
-  --accent-2: #C2410C;       /* orange foncé : lisible sur fond clair */
+  --accent-2: #C2410C;   
   --sur-accent-2: #FFFFFF;
   --accent: #2563EB;
   --accent-fonce: #1D4ED8;
@@ -40,7 +39,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* défilement doux vers les sections */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,7 +52,7 @@ body {
 
 /* ========== BARRE DE NAVIGATION ========== */
 .navbar {
-  position: sticky; /* reste en haut quand on fait défiler */
+  position: sticky;
   top: 0;
   z-index: 10;
   display: flex;
@@ -104,13 +103,13 @@ body {
   width: 20px;
   height: 20px;
   fill: none;
-  stroke: currentColor;   /* l'icône reprend la couleur du texte */
+  stroke: currentColor; 
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-/* Une seule icône visible à la fois */
+
 .icone-soleil { display: none; }
 [data-theme="dark"] .icone-soleil { display: block; }
 [data-theme="dark"] .icone-lune { display: none; }
@@ -132,10 +131,10 @@ section {
 
 h2 {
   font-size: 1.8rem;
-  margin: 0 auto 1.5rem;       /* était : margin-bottom: 1.5rem; */
+  margin: 0 auto 1.5rem;     
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--accent);
-  display: table;              /* était : inline-block */
+  display: table;             
 }
 
 /* ========== ACCUEIL ========== */
@@ -145,15 +144,14 @@ h2 {
   gap: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  min-height: calc(100vh - 73px);    /* hauteur de l'écran moins la barre de navigation */
-  min-height: calc(100dvh - 73px);   /* même chose, plus précis sur téléphone */
+  min-height: calc(100vh - 73px);   
+  min-height: calc(100dvh - 73px);  
 }
 
 .hero-photo {
-  flex-shrink: 0;           /* empêche la photo de s'écraser */
+  flex-shrink: 0;        
 }
 
-/* La photo et son remplaçant : un cercle avec une bordure de la couleur d'accent */
 .hero-photo img,
 .photo-placeholder {
   width: 260px;
@@ -163,7 +161,7 @@ h2 {
 }
 
 .hero-photo img {
-  object-fit: cover;        /* recadre la photo sans la déformer */
+  object-fit: cover;       
   display: block;
 }
 
@@ -301,7 +299,6 @@ h2 {
   margin-bottom: 0.7rem;
 }
 
-/* Sous-parties */
 .sous-section {
   margin-top: 2.5rem;
 }
@@ -313,13 +310,11 @@ h2 {
   color: var(--accent);
 }
 
-/* Les ancres ne sont plus cachées par la barre de navigation fixe */
 section,
 .sous-section {
   scroll-margin-top: 80px;
 }
 
-/* Menu : les liens passent à la ligne s'il n'y a pas assez de place */
 .navbar {
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
@@ -341,17 +336,17 @@ section,
 
 /* ========== PROJETS : liste d'objectifs ========== */
 .card .projet-liste {
-  list-style: disc;          /* remet les puces (.card ul les enlève) */
-  margin: 0 0 0 1.2rem;      /* retrait pour que les puces restent visibles */
+  list-style: disc;         
+  margin: 0 0 0 1.2rem;    
 }
 
 .card .projet-liste li {
   padding: 0.2rem 0;
-  color: var(--texte);       /* texte normal, au lieu du gris de .card li */
+  color: var(--texte);     
 }
 
 .card .projet-liste li::marker {
-  color: var(--accent);      /* puces à la couleur d'accent (facultatif) */
+  color: var(--accent);      
 }
 
 /* ========== PROJETS : cadre et petits titres ========== */
@@ -362,7 +357,7 @@ section,
 
 .project .projet-cadre span {
   font-weight: 600;
-  color: var(--accent-2, var(--accent));   /* orange si défini, sinon accent */
+  color: var(--accent-2, var(--accent)); 
 }
 
 .project h5 {
@@ -440,7 +435,7 @@ section,
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  max-width: 900px;       /* évite des cartes trop larges sur grand écran */
+  max-width: 900px;     
   margin: 0 auto;
 }
 
@@ -455,7 +450,7 @@ section,
 }
 
 .stage:hover {
-  border-color: var(--accent-2, var(--accent));  /* orange si tu l'as défini, sinon bleu */
+  border-color: var(--accent-2, var(--accent)); 
 }
 
 .stage-logo {
@@ -516,7 +511,7 @@ section,
 }
 
 .stage-liste {
-  margin: 0.6rem 0 0 1.2rem;   /* le retrait remet les puces visibles */
+  margin: 0.6rem 0 0 1.2rem;  
   color: var(--texte-doux);
 }
 
@@ -556,7 +551,7 @@ section,
 }
 
 .langues-liste strong {
-  min-width: 100px;      /* aligne les pastilles de niveau */
+  min-width: 100px;     
 }
 
 .niveau {
@@ -570,14 +565,14 @@ section,
 }
 
 .precision {
-  flex: 1 1 200px;       /* passe à la ligne si le texte est long */
+  flex: 1 1 200px;      
   font-size: 0.9rem;
   color: var(--texte-doux);
 }
 
 .niveau--objectif {
   color: var(--texte-doux);
-  border-style: dashed;     /* bordure en pointillés : "pas encore acquis" */
+  border-style: dashed;    
 }
 
 .niveau--natif {
@@ -586,11 +581,10 @@ section,
 
 /* ========== MOBILITÉS ========== */
 .mobilites {
-  max-width: 800px;          /* évite des lignes trop longues à lire sur grand écran */
+  max-width: 800px;        
   margin: 0 auto;
 }
 
-/* Un trait fin entre deux mobilités (supprime ce bloc si tu n'en veux pas) */
 .mobilite + .mobilite {
   margin-top: 2rem;
   padding-top: 2rem;
@@ -606,11 +600,11 @@ section,
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--accent-2, var(--accent));   /* orange si défini, sinon bleu */
+  color: var(--accent-2, var(--accent)); 
 }
 
 .mobilite p + p {
-  margin-top: 0.8rem;        /* espace entre deux paragraphes */
+  margin-top: 0.8rem;      
 }
 
 /* ========== RECORDS ========== */
@@ -647,7 +641,7 @@ section,
 .record-temps {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--accent-2, var(--accent));   /* orange si défini, sinon accent */
+  color: var(--accent-2, var(--accent));  
 }
 
 .record-annee {
@@ -676,10 +670,10 @@ footer {
     font-size: 2.2rem;
   }
   .hero {
-  flex-direction: column;   /* la photo passe au-dessus du texte */
+  flex-direction: column;  
   text-align: center;
   gap: 1.5rem;
-  justify-content: center;   /* centre verticalement quand la photo est au-dessus du texte */
+  justify-content: center;  
 }
 
 .hero-photo img,
