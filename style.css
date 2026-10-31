@@ -9,25 +9,25 @@
   --bordure: #E2E8F0;
   --accent-2: #C2410C;       /* orange foncé : lisible sur fond clair */
   --sur-accent-2: #FFFFFF;
-  --accent: #0F766E;
-  --accent-fonce: #115E59;
+  --accent: #2563EB;
+  --accent-fonce: #1D4ED8;
   --sur-accent: #FFFFFF;
 }
 
 /* Thème sombre */
 [data-theme="dark"] {
-  --fond: #0F1417;
-  --fond-carte: #1A2126;
-  --texte: #E6EAEC;
-  --texte-doux: #9AA7AE;
-  --bordure: #2B353B;
+  --fond: #121416;
+  --fond-carte: #1C1F23;
+  --texte: #E5E7EB;
+  --texte-doux: #9CA3AF;
+  --bordure: #2E3238;
 
-  --accent: #2DD4BF;
-  --accent-fonce: #5EEAD4;
-  --sur-accent: #0B1114;
+  --accent: #38BDF8;
+  --accent-fonce: #7DD3FC;
+  --sur-accent: #0B1218;
 
   --accent-2: #FB923C;
-  --sur-accent-2: #0B1114;
+  --sur-accent-2: #0B1218;
   color-scheme: dark;
 }
 
