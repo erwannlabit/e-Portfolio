@@ -12,6 +12,7 @@
   --accent: #2563EB;
   --accent-fonce: #1D4ED8;
   --sur-accent: #FFFFFF;
+  --vert: #15803D;
 }
 
 /* Thème sombre */
@@ -28,6 +29,7 @@
 
   --accent-2: #FB923C;
   --sur-accent-2: #0B1218;
+  --vert: #4ADE80;
   color-scheme: dark;
 }
 
@@ -524,9 +526,8 @@ section,
 }
 
 .niveau--natif {
-  color: var(--sur-accent);
-  background: var(--accent);
-  border-color: var(--accent);
+  color: var(--vert);
+  border-color: var(--vert);
 }
 
 /* ========== MOBILITÉS ========== */
