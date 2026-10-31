@@ -9,23 +9,25 @@
   --bordure: #E2E8F0;
   --accent-2: #C2410C;       /* orange foncé : lisible sur fond clair */
   --sur-accent-2: #FFFFFF;
-  --accent: #2563EB;
-  --accent-fonce: #1D4ED8;
+  --accent: #0F766E;
+  --accent-fonce: #115E59;
   --sur-accent: #FFFFFF;
 }
 
 /* Thème sombre */
 [data-theme="dark"] {
-  --fond: #0F172A;
-  --fond-carte: #1E293B;
-  --texte: #E2E8F0;
-  --texte-doux: #94A3B8;
-  --bordure: #334155;
-  --accent-2: #FB923C;       /* orange plus clair : lisible sur fond sombre */
-  --sur-accent-2: #0F172A;
-  --accent: #38BDF8;
-  --accent-fonce: #7DD3FC;
-  --sur-accent: #0F172A;
+  --fond: #0F1417;
+  --fond-carte: #1A2126;
+  --texte: #E6EAEC;
+  --texte-doux: #9AA7AE;
+  --bordure: #2B353B;
+
+  --accent: #2DD4BF;
+  --accent-fonce: #5EEAD4;
+  --sur-accent: #0B1114;
+
+  --accent-2: #FB923C;
+  --sur-accent-2: #0B1114;
   color-scheme: dark;
 }
 
