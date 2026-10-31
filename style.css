@@ -339,6 +339,40 @@ section,
   color: var(--texte-doux);
 }
 
+/* ========== PROJETS : liste d'objectifs ========== */
+.card .projet-liste {
+  list-style: disc;          /* remet les puces (.card ul les enlève) */
+  margin: 0 0 0 1.2rem;      /* retrait pour que les puces restent visibles */
+}
+
+.card .projet-liste li {
+  padding: 0.2rem 0;
+  color: var(--texte);       /* texte normal, au lieu du gris de .card li */
+}
+
+.card .projet-liste li::marker {
+  color: var(--accent);      /* puces à la couleur d'accent (facultatif) */
+}
+
+/* ========== PROJETS : cadre et petits titres ========== */
+.project .projet-cadre {
+  margin-bottom: 1rem;
+  color: var(--texte-doux);
+}
+
+.project .projet-cadre span {
+  font-weight: 600;
+  color: var(--accent-2, var(--accent));   /* orange si défini, sinon accent */
+}
+
+.project h5 {
+  margin: 1rem 0 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
 .project .tags {
   font-size: 0.85rem;
   color: var(--accent);
