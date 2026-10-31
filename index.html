@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+  
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Titre affiché dans l'onglet du navigateur : remplace par ton nom -->
   <title>Erwann Labit - Portfolio Électronique, Énergie Électrique et Automatique ENSEEIHT</title>
   <meta name="description" content="Portfolio de Erwann Labit, étudiant en 1ère année d'école d'ingénieur filière Électronique, Énergie Électrique et Automatique.">
   <link rel="stylesheet" href="style.css">
   <script>
-  // Applique le thème enregistré, ou celui de l'ordinateur au premier passage
   const saved = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  
 </head>
+
+  
 <body>
-
-  <!-- ========== BARRE DE NAVIGATION ========== -->
+  
   <header class="navbar">
-    <a href="#accueil" class="logo">Erwann Labit</a>
-
-    <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#ingenieur">Ingénieur</a>
-      <a href="#carriere">Carrière</a>
-      <a href="#developpement-pro">Stages &amp; CV</a>
-      <a href="#international">International</a>
-      <a href="#engagement">Engagement</a>
-      <a href="#loisirs">Loisirs</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="theme-toggle" type="button" aria-label="Changer de thème" title="Changer de thème">
-  <!-- Icône lune (affichée en thème clair) -->
-  <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-  </svg>
-  <!-- Icône soleil (affichée en thème sombre) -->
-  <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true">
-    <circle cx="12" cy="12" r="5"/>
-    <line x1="12" y1="1" x2="12" y2="3"/>
-    <line x1="12" y1="21" x2="12" y2="23"/>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-    <line x1="1" y1="12" x2="3" y2="12"/>
-    <line x1="21" y1="12" x2="23" y2="12"/>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-  </svg>
+   <a href="#accueil" class="logo">Erwann Labit</a>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#ingenieur">Ingénieur</a>
+    <a href="#carriere">Carrière</a>
+    <a href="#developpement-pro">Stages &amp; CV</a>
+    <a href="#international">International</a>
+    <a href="#engagement">Engagement</a>
+    <a href="#loisirs">Loisirs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme-toggle" type="button" aria-label="Changer de thème" title="Changer de thème">
+   <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true">
+     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+   </svg>
+   <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true">
+     <circle cx="12" cy="12" r="5"/>
+     <line x1="12" y1="1" x2="12" y2="3"/>
+     <line x1="12" y1="21" x2="12" y2="23"/>
+     <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+     <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+     <line x1="1" y1="12" x2="3" y2="12"/>
+     <line x1="21" y1="12" x2="23" y2="12"/>
+     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+   </svg>
 </button>
+    
   </header>
 
+  
   <main>
 
-    <!-- ========== ACCUEIL ========== -->
 <section id="accueil" class="hero">
-
-  <!-- Photo : pour l'instant un cercle avec tes initiales (voir l'étape 4 pour mettre ta vraie photo) -->
   <div class="hero-photo">
     <div class="photo-placeholder">PN</div>
   </div>
-
   <div class="hero-contenu">
     <h1>Erwann Labit</h1>
     <p class="hero-subtitle">Bienvenue</p>
@@ -72,13 +70,10 @@
       <a href="#contact" class="btn btn-outline">Me contacter</a>
     </div>
   </div>
-
 </section>
 
-    <!-- ========== INGÉNIEUR ========== -->
 <section id="ingenieur">
   <h2>Ingénieur</h2>
-
   <div class="sous-section" id="competences">
     <h3>Compétences</h3>
     <div class="competences">
@@ -119,18 +114,17 @@
   </ul>
 </article>
 
+ </div>
 </div>
-  </div>
-
-  <div class="sous-section" id="projets">
-    <h3>Projets</h3>
-    <div class="cards">
-      <article class="card project">
-  <header class="stage-entete">
-    <h4>Conception et optimisation d'une sirène électromécanique</h4>
-    <span class="stage-date">Sept 2024 - Juin 2026</span>
-  </header>
-  <p class="projet-cadre"><span>Cadre du projet :</span> TIPE en CPGE, en binôme</p>
+<div class="sous-section" id="projets">
+  <h3>Projets</h3>
+  <div class="cards">
+    <article class="card project">
+      <header class="stage-entete">
+        <h4>Conception et optimisation d'une sirène électromécanique</h4>
+        <span class="stage-date">Sept 2024 - Juin 2026</span>
+      </header>
+      <p class="projet-cadre"><span>Cadre du projet :</span> TIPE en CPGE, en binôme</p>
 
   <div class="projet-colonnes">
     <div class="projet-bloc">
@@ -163,12 +157,11 @@
     <li><i class="devicon-arduino-plain"></i> Arduino</li>
     <li>Travail en binôme</li>
   </ul>
-</article>
+  </article>
+      </div>
     </div>
-  </div>
-</section>
+    </section>
 
-    <!-- ========== PARCOURS ========== -->
     <section id="carriere">
       <h2>Carrière</h2>
       <ul class="timeline">
@@ -190,42 +183,32 @@
       </ul>
     </section>
 
-<!-- ========== DÉVELOPPEMENT PROFESSIONNEL ========== -->
 <section id="developpement-pro">
   <h2>Développement professionnel</h2>
-
   <div class="sous-section" id="stages">
     <h3>Stages</h3>
     <div class="stages">
-
+      
   <article class="stage">
-    <!-- Logo : une initiale en attendant (voir la note plus bas pour un vrai logo) -->
     <div class="stage-logo">L</div>
-
     <div class="stage-contenu">
       <header class="stage-entete">
         <h4>Stage d'observation</h4>
         <span class="stage-date">Déc. 2020</span>
       </header>
       <p class="stage-lieu">LAAS-CNRS, Toulouse</p>
-
       <p>Domaine : Le mouvement des systèmes antropomorphes</p>
       <ul class="stage-liste">
         <li>Découverte d'un laboratoire de recherche</li>
         <li>Première approche de la programmation de robots</li>
         <li>Écoute d'une thèse</li>
       </ul>
-
       <ul class="chips">
         <li>Découverte du monde professionnel</li>
         <li>Programmation</li>
       </ul>
     </div>
   </article>
-
-  <!-- Duplique le bloc <article class="stage"> pour chaque nouveau stage,
-       le plus récent en premier -->
-
 </div>
   </div>
 
@@ -240,49 +223,41 @@
     
 <section id="international">
   <h2>Mobilité internationale</h2>
-
   <div class="sous-section" id="langues">
     <h3>Langues</h3>
     <div class="langues-carte">
   <ul class="langues-liste">
-
     <li>
       <strong>Français</strong>
       <span class="niveau niveau--natif">Langue maternelle</span>
     </li>
-
     <li>
       <strong>Anglais</strong>
       <span class="niveau">B2</span>
       <span class="precision">LV1</span>
     </li>
-
     <li>
       <strong>Espagnol</strong>
       <span class="niveau">B1</span>
       <span class="precision">LV2 - Niveau Baccalauréat</span>
     </li>
-
     <li>
       <strong>Japonais</strong>
       <span class="niveau">A1 Débutant</span>
       <span class="precision">Découverte personnelle & seconde langue étudiée à l'ENSEEIHT</span>
     </li>
-
     <li>
       <strong>Allemand</strong>
       <span class="niveau">A1 Débutant</span>
       <span class="precision">Découverte personnelle</span>
     </li>
-
     <li>
       <strong>Russe</strong>
       <span class="niveau niveau--objectif">Ouvert à l'apprentissage</span>
       <span class="precision">Je suis ouvert à l'apprentissage de nouvelle langue tel que le russe, langue présente dans de nombreuses coopérations et dans le domaine du spatial.</span>
     </li>
-    
   </ul>
-</div>
+  </div>
   </div>
 
   <div class="sous-section" id="mobilites">
@@ -307,15 +282,13 @@
     <p class="mobilite-infos">A réfléchir</p>
     <p>Le Canada est également une destination qui m'intéresse pour effectuer un stage ou poursuivre mes études à l'étranger.</p>
   </article>
-
+      
 </div>
   </div>
 </section>
 
-<!-- ========== DÉVELOPPEMENT DURABLE ET ENGAGEMENT CITOYEN ========== -->
 <section id="engagement">
   <h2>Développement durable et engagement citoyen</h2>
-
   <div class="mobilites">
 
     <article class="mobilite">
@@ -357,10 +330,8 @@
   </div>
 </section>
 
-<!-- ========== SPORT ET LOISIRS ========== -->
 <section id="loisirs">
   <h2>Sport et loisirs</h2>
-
   <div class="sous-section" id="sport">
     <h3>Sport</h3>
     <div class="mobilites">
@@ -401,7 +372,6 @@
         <h4>Tennis de Table</h4>
         <p>J'ai pratiqué le tennis de table en club pendant 3 ans avant de pratiquer la course à pied. Il s'agit d'un sport que j'apprécie toujours autant jouer maintenant. Le tennis de table m'a permis d'améliorer ma rigueur, ma technique et ma gestion du stress face à d'autres adversaires.</p>
       </article>
-
     </div>
   </div>
 
@@ -429,7 +399,6 @@
   </div>
 </section>
 
-    <!-- ========== CONTACT ========== -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Si vous avez une question, un projet ou une proposition de stage, n'hésitez pas à m'écrire.</p>
@@ -442,13 +411,13 @@
 
   </main>
 
+  
   <footer>
     <p>© 2026 Erwann Labit</p>
   </footer>
 <script>
   const bouton = document.getElementById("theme-toggle");
   const racine = document.documentElement;
-
   bouton.addEventListener("click", () => {
     const nouveau = racine.getAttribute("data-theme") === "dark" ? "light" : "dark";
     racine.setAttribute("data-theme", nouveau);
