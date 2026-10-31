@@ -523,6 +523,12 @@ section,
   border-style: dashed;     /* bordure en pointillés : "pas encore acquis" */
 }
 
+.niveau--natif {
+  color: var(--sur-accent);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 /* ========== MOBILITÉS ========== */
 .mobilites {
   max-width: 800px;          /* évite des lignes trop longues à lire sur grand écran */
