@@ -401,7 +401,7 @@ section,
 
 /* ========== VIDÉO ========== */
 .video {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   aspect-ratio: 16 / 9;       /* garde le format vidéo sur tous les écrans */
   border-radius: 12px;
