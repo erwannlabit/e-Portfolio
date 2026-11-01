@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erwann Labit - ENSEEIHT Electronics, Electrical Energy and Control Systems Portfolio</title>
+  <meta name="description" content="Erwann Labit Portfolio, first year student in Electronics, Electrical Energy and Control Systems.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+  const saved = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  
+</head>
+
+  
+<body>
+  
+  <header class="navbar">
+  <a href="#accueil" class="logo">Erwann Labit</a>
+
+  <nav>
+    <a href="#accueil">Home</a>
+    <a href="#ingenieur">Engineering</a>
+    <a href="#carriere">Education</a>
+    <a href="#developpement-pro">Internships &amp; CV</a>
+    <a href="#international">International</a>
+    <a href="#engagement">Civic engagement</a>
+    <a href="#loisirs">Sports &amp; hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="outils">
+
+    <details class="menu-langue">
+      <summary aria-label="Change language" title="Change language">EN ▾</summary>
+      <ul>
+        <li><a href="index.html" lang="fr">Français</a></li>
+        <li><a href="en.html" lang="en" class="actif">English</a></li>
+      </ul>
+    </details>
+
+    <button id="theme-toggle" type="button" aria-label="Change theme" title="Change theme">
+      <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+      <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+  
+  <main>
+
+<section id="accueil" class="hero">
+  <div class="hero-photo">
+    <div class="photo-placeholder">PN</div>
+  </div>
+  <div class="hero-contenu">
+    <h1>Erwann Labit</h1>
+    <p class="hero-subtitle">Welcome</p>
+    <p class="hero-text">
+      My name is Erwann Labit, and I am 20 years old. I am an engineering student at ENSEEIHT in Toulouse. I am specialize in electronics, electrical energy and control systems. I am also a student on the "parcours sportif facilité" (PSF) programme in running, recognised by the Toulouse INP group. On this webpage, you will find my professional background, my skills, my projects and my areas of interest.
+    </p>
+    <div class="hero-buttons">
+      <a href="#developpement-pro" class="btn btn-outline">My CVs</a>
+      <a href="#contact" class="btn btn-outline">Contact me</a>
+    </div>
+  </div>
+</section>
+
+<section id="ingenieur">
+  <h2>Engineer</h2>
+  <div class="sous-section" id="competences">
+    <h3>Skills</h3>
+    <div class="competences">
+
+  <article class="groupe">
+    <h4>Languages</h4>
+    <ul class="chips">
+      <li><i class="devicon-python-plain"></i> Python</li>
+      <li><i class="devicon-c-plain"></i> C</li>
+      <li>SQL</li>
+      <li><i class="devicon-html5-plain"></i> HTML</li>
+      <li><i class="devicon-css3-plain"></i> CSS</li>
+      <li><i class="devicon-latex-original"></i> LaTeX</li>
+      <li><i class="devicon-arduino-plain"></i> Arduino</li>
+    </ul>
+  </article>
+
+  <article class="groupe">
+  <h4>IDE & Editors</h4>
+  <ul class="chips">
+    <li><i class="devicon-matlab-plain"></i> Matlab</li>
+    <li><i class="devicon-vscode-plain"></i> Visual Studio Code</li>
+    <li><i class="devicon-arduino-plain"></i> Arduino IDE</li>
+    <li>Spyder</li>
+    <li>Code::Blocks</li>
+    <li>Overleaf</li>
+  </ul>
+</article>
+
+<article class="groupe">
+  <h4>Systems & Tools</h4>
+  <ul class="chips">
+    <li><i class="devicon-windows8-original"></i> Windows</li>
+    <li><i class="devicon-git-plain"></i> Git</li>
+    <li><i class="devicon-github-original"></i> GitHub</li>
+    <li><i class="devicon-blender-original"></i> Blender</li>
+    <li>Claude Code</li>
+  </ul>
+</article>
+
+ </div>
+</div>
+<div class="sous-section" id="projets">
+  <h3>Projects</h3>
+  <div class="cards">
+    <article class="card project">
+      <header class="stage-entete">
+        <h4>Design and optimisation of an electromechanical siren</h4>
+        <span class="stage-date">Sept 2024 - June 2026</span>
+      </header>
+      <p class="projet-cadre"><span>Project context :</span> TIPE in CPGE, in pairs</p>
+
+  <div class="projet-colonnes">
+    <div class="projet-bloc">
+      <h5>Common objectives</h5>
+      <ul class="projet-liste">
+        <li>Construction of a siren prototype</li>
+      </ul>
+    </div>
+
+    <div class="projet-bloc">
+      <h5>My goals</h5>
+      <ul class="projet-liste">
+        <li>Implementation of a speed control system for the siren</li>
+          <li>A study of the influence of rotational speed on sound intensity and the frequency of the emitted sound signal</li>
+        </ul>
+    </div>
+
+    <div class="projet-bloc">
+      <h5>Created by my colleague</h5>
+      <ul class="projet-liste">
+        <li>Analysis of the influence of rotor geometry on the acoustic signal emitted</li>
+          <li>Investigation into the factors that have the greatest influence on the level of sound emitted</li>
+        </ul>
+    </div>
+  </div>
+
+  <ul class="chips">
+    <li><i class="devicon-python-plain"></i> Python</li>
+    <li><i class="devicon-matlab-plain"></i> Matlab</li>
+    <li><i class="devicon-arduino-plain"></i> Arduino</li>
+    <li>Working in pairs</li>
+  </ul>
+  </article>
+      </div>
+    </div>
+    </section>
+
+    <section id="carriere">
+      <h2>Formation</h2>
+      <ul class="timeline">
+        <li>
+          <span class="date">Sept 2026 – today</span>
+          <strong>ENSEEIHT</strong>
+          <p>Engineering degree programme, specialising in electronics, electrical energy and control systems (3EA).</p>
+        </li>
+        <li>
+          <span class="date">2024 – 2026</span>
+          <strong>French preparatory class for engineering schools (CPGE), PCSI-PSI track</strong>
+          <p>Lycée Déodat de Séverac, Toulouse, France.</p>
+        </li>
+        <li>
+          <span class="date">2024</span>
+          <strong>French Baccaloreate : Mathematics, Physics and Chemistry (and Engineering Sciences)</strong>
+          <p>Lycée Saint Joseph La Salle Toulouse, France, High honors.</p>
+        </li>
+      </ul>
+    </section>
+
+<section id="developpement-pro">
+  <h2>Professional development</h2>
+  <div class="sous-section" id="stages">
+    <h3>Internships</h3>
+    <div class="stages">
+      
+  <article class="stage">
+    <div class="stage-logo">L</div>
+    <div class="stage-contenu">
+      <header class="stage-entete">
+        <h4>Job shadowing (middle school work experience)</h4>
+        <span class="stage-date">Dec. 2020</span>
+      </header>
+      <p class="stage-lieu">LAAS-CNRS, Toulouse, France</p>
+      <p>Field: The motion of anthropomorphic systems</p>
+      <ul class="stage-liste">
+        <li>Introduction to a research laboratory</li>
+        <li>An introduction to robot programming</li>
+        <li>Attending a PhD defense</li>
+      </ul>
+    </div>
+  </article>
+</div>
+  </div>
+
+<div class="sous-section" id="cv">
+  <h3>My CVs</h3>
+  <a class="btn" href="cv_erwann_labit_en.pdf" target="_blank" rel="noopener">CV in English</a>
+  <a class="btn btn-outline" href="cv_erwann_labit_fr.pdf" target="_blank" rel="noopener">CV en français</a>
+</div>
+
+    
+<section id="international">
+  <h2>International mobility</h2>
+  <div class="sous-section" id="langues">
+    <h3>Languages</h3>
+    <div class="langues-carte">
+  <ul class="langues-liste">
+    <li>
+      <strong>French</strong>
+      <span class="niveau niveau--natif">Native Language</span>
+    </li>
+    <li>
+      <strong>English</strong>
+      <span class="niveau">B2</span>
+      <span class="precision">LV1</span>
+    </li>
+    <li>
+      <strong>Spanish</strong>
+      <span class="niveau">B1</span>
+      <span class="precision">LV2 - Baccalaureate level</span>
+    </li>
+    <li>
+      <strong>Japanese</strong>
+      <span class="niveau">A1 Beginner</span>
+      <span class="precision">Personal discovery & second language studied at ENSEEIHT</span>
+    </li>
+    <li>
+      <strong>Dutch</strong>
+      <span class="niveau">A1 Beginner</span>
+      <span class="precision">Personal discovery</span>
+    </li>
+    <li>
+      <strong>Russian</strong>
+      <span class="niveau niveau--objectif">Open to learning</span>
+      <span class="precision">I am open to learning new languages, such as Russian, which is widely used in international cooperation and in the space sector.</span>
+    </li>
+  </ul>
+  </div>
+  </div>
+
+  <div class="sous-section" id="mobilites">
+    <h3>Mobility projects</h3>
+    <div class="mobilites">
+
+  <article class="mobilite">
+    <h4>Mobility 1 : Japan, Tokyo & Yokohama</h4>
+    <p class="mobilite-infos">July/August 2027 · Industrial work placement</p>
+    <p>This mobility project forms part of the work placement undertaken at the end of the first year at ENSEEIHT.</p>
+    <p>My aim in undertaking this project is to improve my command of Japanese by using it in real-life situations, both in everyday life and in a professional setting. I also hope to continue deepening my understanding of Japanese culture.</p>
+  </article>
+
+  <article class="mobilite">
+    <h4>Mobility 2 : Scandinavian countries</h4>
+    <p class="mobilite-infos">2028 · ERASMUS</p>
+    <p>I am considering spending a semester abroad as part of the Erasmus programme.
+  I would like to spend it in a Scandinavian country, whose culture
+  interests me and which is among the most advanced in terms of the ecological transition.
+  This progress is evident in scientific and technical fields, particularly in
+  renewable energy.</p>
+  </article>
+
+  <article class="mobilite">
+    <h4>Mobility 3 : Canada, Montréal or Toronto</h4>
+    <p class="mobilite-infos">Under consideration</p>
+    <p>Canada is also a destination that interests me for an internship or to continue my studies abroad.</p>
+  </article>
+      
+</div>
+  </div>
+</section>
+
+<section id="engagement">
+  <h2>Sustainable development and civic engagement</h2>
+  <div class="mobilites">
+
+    <article class="mobilite">
+      <h4>Onco Run</h4>
+      <p class="mobilite-infos">Editions 2024, 2025 and 2026</p>
+      <p>I have taken part in various races organised by ONCOPOLE in aid of the Cancer League.</p>
+    </article>
+
+    <article class="mobilite">
+      <h4>Pink October University Cross-Country Race</h4>
+      <p class="mobilite-infos">Oct 2026</p>
+      <p>I took part in a charity run organised by the schools in the Toulouse INP group in aid of the Cancer League.</p>
+    </article>
+    
+    <article class="mobilite">
+      <h4>Clean walk</h4>
+      <p class="mobilite-infos">Sept 2026</p>
+      <p>At the start of my first year at ENSEEIHT, some second-year students organised a ‘Clean Walk’ for the first-years. The aim is to walk through the town and pick up all the rubbish from the streets.</p>
+    </article>
+
+    <article class="mobilite">
+      <h4>Planetary Boundaries Fresco workshop</h4>
+      <p class="mobilite-infos">Sept 2026</p>
+      <p>I took part in an activity on the "Planetary Boundaries" mural with other students from ENSEEIHT.
+        We were given illustrated cards depicting environmental degradation.
+        Our aim was to identify the causes, consequences and types of environmental degradation.
+        This activity helped us to better understand the various climate issues.</p>
+    </article>
+
+    <article class="mobilite">
+      <h4>The King Kong Trial</h4>
+      <p class="mobilite-infos">Sept 2026</p>
+      <p>I attended "Le procès de King Kong" (The Trial of King Kong), an interactive play presenting three examples of sexist and sexual violence and their consequences.</p>
+    </article>
+
+    <article class="mobilite">
+      <h4>Festival Futur Proche (Near Future Festival)</h4>
+      <p class="mobilite-infos">Oct 2026</p>
+      <p>I took part in the day dedicated to the "Futur Proche" festival (Near Future Festival), organised by the universities of Toulouse and their partner schools. I attended two conferences, "Thinking about the effects of generative AI" and "Rethinking technology, its purposes and the role of the engineer", which I found very insightful.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="loisirs">
+  <h2>Sports and hobbies</h2>
+  <div class="sous-section" id="sport">
+    <h3>Sports</h3>
+    <div class="mobilites">
+
+      <article class="mobilite">
+        <h4>Running</h4>
+        <p class="mobilite-infos">800 m to half marathon · track, road and trail</p>
+        <p>
+          I have been running for 13 years, including 11 years in a club, and I also hold a French University Sports Federation (FFSU) licence since this year. I currently compete at regional level. Thanks to this, Toulouse INP granted me the status of student-athlete under its "Parcours Sportif Facilité" (PSF) scheme.
+Running has helped me develop consistency, perseverance and stress management.
+        </p>
+        <p class="mobilite-infos records-titre">Personnal Records</p>
+        <ul class="records">
+          <li>
+            <span class="record-distance">1000 m</span>
+            <span class="record-temps">2'49"67</span>
+            <span class="record-annee">Oct 2025</span>
+          </li>
+          <li>
+            <span class="record-distance">5 km</span>
+            <span class="record-temps">17'28"</span>
+            <span class="record-annee">Oct 2026</span>
+          </li>
+          <li>
+            <span class="record-distance">Half Marathon</span>
+            <span class="record-temps">1h20'45"</span>
+            <span class="record-annee">Nov 2026</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="mobilite">
+        <h4>Indoor Climbing</h4>
+        <p>I took part in a sports club climbing programme for two years at secondary school. Climbing helped me to think calmly whilst exerting myself.</p>
+      </article>
+
+      <article class="mobilite">
+        <h4>Table Tennis</h4>
+        <p>I played table tennis at a club for three years before taking up running. It’s a sport I still enjoy just as much today. Table tennis helped me improve my discipline, my technique and my ability to manage stress when facing other opponents.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="sous-section" id="arts-loisirs">
+    <h3>Arts and hobbies</h3>
+    <div class="mobilites">
+
+      <article class="mobilite">
+        <h4>Piano</h4>
+        <p>My curiosity about music led me to take piano lessons for five years. Those years helped me develop a disciplined approach to learning: you have to practise regularly, break a difficult piece down into small steps, and be prepared to repeat things in order to make progress.</p>
+      </article>
+
+      <article class="mobilite">
+        <h4>Language learning and discovering new cultures</h4>
+        <p>I find foreign languages and cultures fascinating. I enjoy taking the time to learn new words in various languages. Each language also offers a different way of seeing the world, and that’s what motivates me to keep discovering them.
+        <br>Being able to communicate with people who speak another language is very rewarding.</p>
+      </article>
+
+      <article class="mobilite">
+        <h4>Video Games</h4>
+        <p class="mobilite-infos">Valorant</p>
+        <p>In my spare time, I also enjoy playing Valorant. It’s a first-person shooter (FPS) in which two teams of five players compete against each other. In this game, it’s important to be able to communicate clearly as a team and to make quick decisions, whether individually or as a team, in order to win the match. I find it a very interesting game because there’s always something new to learn, and analysing past matches allows you to assess your strengths and weaknesses whilst coming up with new strategies.</p>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions, a project or an internship proposal, please feel free to write to me.</p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:erwann.labit@gmail.com">erwann.labit@gmail.com</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/erwann-labit-17bb4b432" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/erwannlabit" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer>
+    <p>© 2026 Erwann Labit</p>
+  </footer>
+<script>
+  const bouton = document.getElementById("theme-toggle");
+  const racine = document.documentElement;
+  bouton.addEventListener("click", () => {
+    const nouveau = racine.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    racine.setAttribute("data-theme", nouveau);
+    localStorage.setItem("theme", nouveau);
+  });
+</script>
+</body>
+</html>
