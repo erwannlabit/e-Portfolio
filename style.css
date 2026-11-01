@@ -122,6 +122,71 @@ body {
   text-align: center;
 }
 
+.menu-langue {
+  position: relative;
+}
+
+.menu-langue summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 0.9rem;
+  border: 2px solid var(--bordure);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--texte);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.menu-langue summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-langue summary:hover {
+  border-color: var(--accent);
+}
+
+.menu-langue ul {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 20;
+  min-width: 140px;
+  list-style: none;
+  padding: 0.3rem;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.menu-langue li a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  color: var(--texte);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu-langue li a:hover {
+  background: var(--fond);
+}
+
+.menu-langue li a.actif {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.outils {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 /* ========== SECTIONS ========== */
 section {
   max-width: 1200px;
