@@ -399,6 +399,22 @@ section,
   color: var(--texte-doux);
 }
 
+/* ========== VIDÉO ========== */
+.video {
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;       /* garde le format vidéo sur tous les écrans */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--bordure);
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* ========== PROJETS : liste d'objectifs ========== */
 .card .projet-liste {
   list-style: disc;         
